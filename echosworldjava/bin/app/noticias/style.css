@@ -1,0 +1,94 @@
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #B5D496;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    margin: 0 -68px;
+    padding: 35px;
+    vertical-align: middle;
+    position: relative;
+    left: -42px;
+}
+
+.menu {
+    position: absolute;
+    bottom: 0;
+    background-color: #d2e9c8;
+    width: 100%;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.menu li {
+    margin: 0;
+}
+
+.menu a {
+    display: block;
+    padding: 15px 20px;
+    text-decoration: none;
+    color: #000000;
+    text-align: center;
+    position: relative; /* Adicionado para posicionar o quadrado */
+}
+
+
+/* Estilizando a opção "Notícias" */
+.menu li:first-child a {
+    color: #fff; /* Texto branco */
+    background-color: #000; /* Fundo preto */
+    border-radius: 4px; /* Bordas arredondadas do quadrado */
+    padding: 10px 15px; /* Ajuste do padding para o quadrado */
+    margin-top: 8px; /* Espaço entre o quadrado preto e a parte superior do menu */
+    padding: 6px 12px; /* Ajusta o tamanho do quadrado */
+}
+
+.menu li:first-child a:hover {
+    background-color: #000; /* Fundo preto quando em hover */
+    color: #fff; /* Texto branco quando em hover */
+}
+
+
+@media (max-width: 600px){
+
+    body{
+    
+    background-color: #ffffff;
+    
+    }
+    
+    header, footer{
+    
+    padding: 0.5em 0;
+    
+    }
+    
+    section{
+    
+    padding: 1em;
+    
+    }
+}
